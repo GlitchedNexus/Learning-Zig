@@ -9,21 +9,21 @@
 //!
 //! I hope you enjoy :D
 
-// This line  here gives us access to the standard namespace.
-// If you are familiar with C or related languages you will
-// be familiar with this namespace.
-//
-// If you want to learn more about namespaces go to:
-// https://en.wikipedia.org/wiki/Namespace
-//
-// But in this case, we are importing the standard
-// library in zig "abstract container or environment" which
-// gives us modules that are groupings of useful functions.
+/// This line  here gives us access to the standard namespace.
+/// If you are familiar with C or related languages you will
+/// be familiar with this namespace.
+///
+/// If you want to learn more about namespaces go to:
+/// https://en.wikipedia.org/wiki/Namespace
+///
+/// But in this case, we are importing the standard
+/// library in zig "abstract container or environment" which
+/// gives us modules that are groupings of useful functions.
 const std = @import("std");
 
-// You may notice the `!` before the return type `void` for
-// for this function, it is used to indicate that errors
-// may be returned by the function. More on that later!
+/// You may notice the `!` before the return type `void` for
+/// for this function, it is used to indicate that errors
+/// may be returned by the function. More on that later!
 pub fn main() !void {
     // Here the `stdout` is the writer object from the
     // I/O module (represented here with 'io') in the
