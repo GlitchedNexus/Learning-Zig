@@ -21,6 +21,9 @@
 // gives us modules that are groupings of useful functions.
 const std = @import("std");
 
+// You may notice the `!` before the return type `void` for
+// for this function, it is used to indicate that errors
+// may be returned by the function. More on that later!
 pub fn main() !void {
     // Here the `stdout` is the writer object from the
     // I/O module (represented here with 'io') in the
